@@ -88,7 +88,7 @@ class UsersTVC: UITableViewController {
     */
 
     private func fetchUsers() {
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/users") else { return }
+        guard let url = ApiConstants.usersPathURL else { return }
 
         let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             

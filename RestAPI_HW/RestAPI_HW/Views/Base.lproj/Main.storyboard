@@ -244,7 +244,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="Albums"/>
                                                 <connections>
-                                                    <action selector="albomsAction" destination="0r6-no-jhF" eventType="touchUpInside" id="nrc-iK-POp"/>
+                                                    <action selector="photosAction" destination="0r6-no-jhF" eventType="touchUpInside" id="dhQ-Zg-faC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7u-XX-lCp">
@@ -260,6 +260,9 @@
                                                 <color key="tintColor" red="0.442183457" green="0.2475941488" blue="0.78361636400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Coordinates"/>
+                                                <connections>
+                                                    <action selector="coordinatesAction:" destination="0r6-no-jhF" eventType="touchUpInside" id="Zz5-lp-TKH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

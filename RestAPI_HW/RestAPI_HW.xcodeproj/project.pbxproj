@@ -15,6 +15,14 @@
 		12DB1A792958BF55006C3847 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A782958BF55006C3847 /* Post.swift */; };
 		12DB1A7B2958BF65006C3847 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A7A2958BF65006C3847 /* Comment.swift */; };
 		12DB1A7D2958BF73006C3847 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A7C2958BF73006C3847 /* Photo.swift */; };
+		12DB1A7F2958CA97006C3847 /* PhotosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A7E2958CA97006C3847 /* PhotosTVC.swift */; };
+		12DB1A822958D368006C3847 /* Coordinates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DB1A812958D368006C3847 /* Coordinates.storyboard */; };
+		12DB1A852958D53F006C3847 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A842958D53F006C3847 /* MapVC.swift */; };
+		12DB1A872958E4A7006C3847 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A862958E4A7006C3847 /* Album.swift */; };
+		12DB1A8A2958E668006C3847 /* AlbumsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A892958E668006C3847 /* AlbumsTVC.swift */; };
+		12DB1A8D2958E952006C3847 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A8C2958E952006C3847 /* ToDo.swift */; };
+		12DB1A8F2958EA08006C3847 /* ToDosFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DB1A8E2958EA08006C3847 /* ToDosFlow.storyboard */; };
+		12DB1A922958EAD1006C3847 /* ToDosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A912958EAD1006C3847 /* ToDosTVC.swift */; };
 		2D0B77FE295221920006C1EA /* ActionsCVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B77FD295221920006C1EA /* ActionsCVController.swift */; };
 		2D0B78002952228B0006C1EA /* ActionCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B77FF2952228B0006C1EA /* ActionCVCell.swift */; };
 		2D0B7805295228580006C1EA /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0B7804295228580006C1EA /* ImageVC.swift */; };
@@ -39,6 +47,14 @@
 		12DB1A782958BF55006C3847 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		12DB1A7A2958BF65006C3847 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		12DB1A7C2958BF73006C3847 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		12DB1A7E2958CA97006C3847 /* PhotosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTVC.swift; sourceTree = "<group>"; };
+		12DB1A812958D368006C3847 /* Coordinates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Coordinates.storyboard; sourceTree = "<group>"; };
+		12DB1A842958D53F006C3847 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		12DB1A862958E4A7006C3847 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		12DB1A892958E668006C3847 /* AlbumsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsTVC.swift; sourceTree = "<group>"; };
+		12DB1A8C2958E952006C3847 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		12DB1A8E2958EA08006C3847 /* ToDosFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDosFlow.storyboard; sourceTree = "<group>"; };
+		12DB1A912958EAD1006C3847 /* ToDosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosTVC.swift; sourceTree = "<group>"; };
 		2D0B77FD295221920006C1EA /* ActionsCVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsCVController.swift; sourceTree = "<group>"; };
 		2D0B77FF2952228B0006C1EA /* ActionCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCVCell.swift; sourceTree = "<group>"; };
 		2D0B7804295228580006C1EA /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
@@ -67,11 +83,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		12DB1A6D2958BE13006C3847 /* AlbumsFlow */ = {
+		12DB1A832958D4C9006C3847 /* CoordinatesFlow */ = {
 			isa = PBXGroup;
 			children = (
+				12DB1A842958D53F006C3847 /* MapVC.swift */,
+				12DB1A7E2958CA97006C3847 /* PhotosTVC.swift */,
+			);
+			path = CoordinatesFlow;
+			sourceTree = "<group>";
+		};
+		12DB1A8B2958E676006C3847 /* AlbumsFlow */ = {
+			isa = PBXGroup;
+			children = (
+				12DB1A892958E668006C3847 /* AlbumsTVC.swift */,
 			);
 			path = AlbumsFlow;
+			sourceTree = "<group>";
+		};
+		12DB1A902958EA99006C3847 /* ToDosFlow */ = {
+			isa = PBXGroup;
+			children = (
+				12DB1A912958EAD1006C3847 /* ToDosTVC.swift */,
+			);
+			path = ToDosFlow;
 			sourceTree = "<group>";
 		};
 		2D0B77FB2952214A0006C1EA /* Models */ = {
@@ -85,6 +119,8 @@
 				12DB1A782958BF55006C3847 /* Post.swift */,
 				12DB1A7A2958BF65006C3847 /* Comment.swift */,
 				12DB1A7C2958BF73006C3847 /* Photo.swift */,
+				12DB1A862958E4A7006C3847 /* Album.swift */,
+				12DB1A8C2958E952006C3847 /* ToDo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -92,7 +128,9 @@
 		2D0B77FC295221520006C1EA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				12DB1A6D2958BE13006C3847 /* AlbumsFlow */,
+				12DB1A902958EA99006C3847 /* ToDosFlow */,
+				12DB1A8B2958E676006C3847 /* AlbumsFlow */,
+				12DB1A832958D4C9006C3847 /* CoordinatesFlow */,
 				2D0B7803295228330006C1EA /* ActionFlow */,
 				2D0B7804295228580006C1EA /* ImageVC.swift */,
 				2DCE14712954D9F600C143DE /* Users */,
@@ -115,6 +153,7 @@
 			children = (
 				2D4326452952201F00165E37 /* RestAPI_HW */,
 				2D4326442952201F00165E37 /* Products */,
+				C3B68F8821F364E2CAFFC706 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +194,8 @@
 				2DCE146F2954D94400C143DE /* PostFlow.storyboard */,
 				2D4326512952202000165E37 /* LaunchScreen.storyboard */,
 				12DB1A6B2958BC51006C3847 /* AlbumsFlow.storyboard */,
+				12DB1A812958D368006C3847 /* Coordinates.storyboard */,
+				12DB1A8E2958EA08006C3847 /* ToDosFlow.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +215,13 @@
 				2DCE14722954DA1900C143DE /* PostsTVC.swift */,
 			);
 			path = PostsFlow;
+			sourceTree = "<group>";
+		};
+		C3B68F8821F364E2CAFFC706 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +284,10 @@
 			files = (
 				12DB1A6C2958BC51006C3847 /* AlbumsFlow.storyboard in Resources */,
 				2DCE14702954D94400C143DE /* PostFlow.storyboard in Resources */,
+				12DB1A822958D368006C3847 /* Coordinates.storyboard in Resources */,
 				2D4326532952202000165E37 /* LaunchScreen.storyboard in Resources */,
 				2D4326502952202000165E37 /* Assets.xcassets in Resources */,
+				12DB1A8F2958EA08006C3847 /* ToDosFlow.storyboard in Resources */,
 				2D43264E2952201F00165E37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,20 +301,26 @@
 			files = (
 				2DCE146E2954D51900C143DE /* DetailUserVC.swift in Sources */,
 				2D0B78002952228B0006C1EA /* ActionCVCell.swift in Sources */,
+				12DB1A872958E4A7006C3847 /* Album.swift in Sources */,
 				2DCE14762954DBAD00C143DE /* ApiConstants.swift in Sources */,
 				2D0B77FE295221920006C1EA /* ActionsCVController.swift in Sources */,
 				2D0B7805295228580006C1EA /* ImageVC.swift in Sources */,
 				12DB1A732958BEF5006C3847 /* Address.swift in Sources */,
 				2D4326472952201F00165E37 /* AppDelegate.swift in Sources */,
+				12DB1A852958D53F006C3847 /* MapVC.swift in Sources */,
 				2DCE14732954DA1900C143DE /* PostsTVC.swift in Sources */,
 				12DB1A792958BF55006C3847 /* Post.swift in Sources */,
 				12DB1A7D2958BF73006C3847 /* Photo.swift in Sources */,
+				12DB1A7F2958CA97006C3847 /* PhotosTVC.swift in Sources */,
 				2DCE146C2954D20600C143DE /* UsersTVC.swift in Sources */,
 				12DB1A7B2958BF65006C3847 /* Comment.swift in Sources */,
+				12DB1A8D2958E952006C3847 /* ToDo.swift in Sources */,
+				12DB1A8A2958E668006C3847 /* AlbumsTVC.swift in Sources */,
 				2D4326492952201F00165E37 /* SceneDelegate.swift in Sources */,
 				12DB1A752958BF13006C3847 /* Company.swift in Sources */,
 				12DB1A712958BED1006C3847 /* User.swift in Sources */,
 				12DB1A772958BF34006C3847 /* Geo.swift in Sources */,
+				12DB1A922958EAD1006C3847 /* ToDosTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

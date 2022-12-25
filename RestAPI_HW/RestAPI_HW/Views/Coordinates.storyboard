@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MapVC-->
+        <scene sceneID="Adr-m2-y0Q">
+            <objects>
+                <viewController storyboardIdentifier="MapVC" id="Vsj-av-gjr" customClass="MapVC" customModule="RestAPI_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l5B-qP-Iya">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXi-rP-6K0">
+                                <rect key="frame" x="49" y="657.33333333333337" width="295" height="93.666666666666629"/>
+                                <color key="backgroundColor" red="0.68243628739999995" green="0.68215245010000003" blue="0.6980413795" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.074743433489999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVA-Gk-B2T">
+                                <rect key="frame" x="49" y="767" width="295" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Confirm coordinates">
+                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                    <color key="baseBackgroundColor" red="0.093510823199999996" green="0.036469478309999998" blue="0.96611279250000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1oi-14-Kvq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cXi-rP-6K0" firstAttribute="height" secondItem="l5B-qP-Iya" secondAttribute="height" multiplier="0.11" id="8BE-x6-iAf"/>
+                            <constraint firstItem="1oi-14-Kvq" firstAttribute="bottom" secondItem="uVA-Gk-B2T" secondAttribute="bottom" constant="16" id="BbJ-xy-O2U"/>
+                            <constraint firstItem="uVA-Gk-B2T" firstAttribute="centerX" secondItem="l5B-qP-Iya" secondAttribute="centerX" id="FWU-NA-W1O"/>
+                            <constraint firstItem="cXi-rP-6K0" firstAttribute="width" secondItem="l5B-qP-Iya" secondAttribute="width" multiplier="0.75" id="LCM-25-dwY"/>
+                            <constraint firstItem="uVA-Gk-B2T" firstAttribute="width" secondItem="cXi-rP-6K0" secondAttribute="width" id="hkE-xd-3S2"/>
+                            <constraint firstItem="uVA-Gk-B2T" firstAttribute="top" secondItem="cXi-rP-6K0" secondAttribute="bottom" constant="16" id="pVo-GG-SbO"/>
+                            <constraint firstItem="cXi-rP-6K0" firstAttribute="centerX" secondItem="l5B-qP-Iya" secondAttribute="centerX" id="xuA-TX-hcU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="uVA-Gk-B2T" id="O0a-hl-XHC"/>
+                        <outlet property="coordinatesLabel" destination="cXi-rP-6K0" id="rHG-GU-a89"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5AF-Oc-iRx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2998" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

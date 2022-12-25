@@ -28,15 +28,25 @@ class DetailUserVC: UIViewController {
         vc.user = user
         navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func coordinatesAction(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Coordinates", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "MapVC") as? MapVC else { return }
+        vc.user = user
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
-    @IBAction func albomsAction() {
-//        let storyboard = UIStoryboard(name: "AlbumsAndPhotos", bundle: nil)
-//        guard let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTVC") as? AlbumsTVC else { return }
-//        vc.user = user
-//        navigationController?.pushViewController(vc, animated: true)
+    @IBAction func photosAction() {
+        let storyboard = UIStoryboard(name: "AlbumsFlow", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTVC") as? AlbumsTVC else { return }
+        vc.user = user
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func todosAction() {
+        let storyboard = UIStoryboard(name: "ToDosFlow", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "ToDosTVC") as? ToDosTVC else { return }
+        vc.user = user
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     private func setupUI() {
