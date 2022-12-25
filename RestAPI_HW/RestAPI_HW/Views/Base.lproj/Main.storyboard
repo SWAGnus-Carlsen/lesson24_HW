@@ -12,7 +12,7 @@
         <!--ActionsCV Controller-->
         <scene sceneID="VH9-FJ-R4y">
             <objects>
-                <collectionViewController id="LOP-cK-P6I" customClass="ActionsCVController" customModule="RestAPIAppCW" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="LOP-cK-P6I" customClass="ActionsCVController" customModule="RestAPI_HW" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2g3-ir-IIi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="J7M-S8-tvz" customClass="ActionCVCell" customModule="RestAPIAppCW" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="J7M-S8-tvz" customClass="ActionCVCell" customModule="RestAPI_HW" customModuleProvider="target">
                                 <rect key="frame" x="28.666666666666668" y="0.0" width="336" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="awM-2x-E8Z">
@@ -70,28 +70,28 @@
         <!--UsersTVC-->
         <scene sceneID="YqW-p7-y5z">
             <objects>
-                <tableViewController id="H83-XG-RK4" customClass="UsersTVC" customModule="RestAPIAppCW" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="H83-XG-RK4" customClass="UsersTVC" customModule="RestAPI_HW" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VAc-Q0-qAM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="4FB-H4-LN6" detailTextLabel="uoo-IR-UxW" style="IBUITableViewCellStyleSubtitle" id="rkg-s3-YyU">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="50" width="393" height="84.666664123535156"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rkg-s3-YyU" id="ZXK-Fi-DLq">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="84.666664123535156"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4FB-H4-LN6">
-                                            <rect key="frame" x="20" y="-5" width="51" height="30"/>
+                                            <rect key="frame" x="20" y="11.666666666666668" width="51" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uoo-IR-UxW">
-                                            <rect key="frame" x="20" y="25" width="67.333333333333329" height="24"/>
+                                            <rect key="frame" x="20" y="46" width="67.333333333333329" height="24"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
@@ -115,7 +115,7 @@
         <!--Detail UserVC-->
         <scene sceneID="dmD-1j-9Zy">
             <objects>
-                <viewController storyboardIdentifier="DetailUserVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0r6-no-jhF" customClass="DetailUserVC" customModule="RestAPIAppCW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailUserVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0r6-no-jhF" customClass="DetailUserVC" customModule="RestAPI_HW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8mS-R1-qhV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +232,7 @@
                                         <rect key="frame" x="0.0" y="355.66666666666674" width="343" height="353.33333333333326"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qz-Ci-F8a">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="85"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="51.666666666666664"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="gray" title="Posts"/>
                                                 <connections>
@@ -240,23 +240,30 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukl-ca-6p3">
-                                                <rect key="frame" x="0.0" y="133.99999999999994" width="343" height="85.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="100.66666666666669" width="343" height="51.666666666666657"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="Alboms"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Albums"/>
                                                 <connections>
                                                     <action selector="albomsAction" destination="0r6-no-jhF" eventType="touchUpInside" id="nrc-iK-POp"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7u-XX-lCp">
-                                                <rect key="frame" x="0.0" y="268.33333333333331" width="343" height="85"/>
+                                                <rect key="frame" x="0.0" y="201.33333333333331" width="343" height="51.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="ToDo-s"/>
                                                 <connections>
                                                     <action selector="todosAction" destination="0r6-no-jhF" eventType="touchUpInside" id="Dtc-8o-1AH"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6b-eb-9S4">
+                                                <rect key="frame" x="0.0" y="301.66666666666669" width="343" height="51.666666666666686"/>
+                                                <color key="tintColor" red="0.442183457" green="0.2475941488" blue="0.78361636400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Coordinates"/>
+                                            </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="s7u-XX-lCp" firstAttribute="height" secondItem="g6b-eb-9S4" secondAttribute="height" id="GSk-K9-Xvv"/>
                                             <constraint firstItem="s7u-XX-lCp" firstAttribute="height" secondItem="ukl-ca-6p3" secondAttribute="height" id="RuA-EV-KtY"/>
                                             <constraint firstItem="ukl-ca-6p3" firstAttribute="height" secondItem="2Qz-Ci-F8a" secondAttribute="height" id="Uy1-IW-dge"/>
                                         </constraints>
@@ -288,7 +295,7 @@
         <!--ImageVC-->
         <scene sceneID="v4h-53-qaS">
             <objects>
-                <viewController id="Bte-Cc-wtJ" customClass="ImageVC" customModule="RestAPIAppCW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Bte-Cc-wtJ" customClass="ImageVC" customModule="RestAPI_HW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v5J-Y3-VAk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -30,8 +30,8 @@ class DetailUserVC: UIViewController {
     }
     
     @IBAction func albomsAction() {
-//        let storyboard = UIStoryboard(name: "AlbomsAndFotos", bundle: nil)
-//        let vc = storyboard.instantiateViewController(withIdentifier: "AlbomsTVC") as! AlbomsTVC
+//        let storyboard = UIStoryboard(name: "AlbumsAndPhotos", bundle: nil)
+//        guard let vc = storyboard.instantiateViewController(withIdentifier: "AlbumsTVC") as? AlbumsTVC else { return }
 //        vc.user = user
 //        navigationController?.pushViewController(vc, animated: true)
     }

@@ -1,6 +1,6 @@
 //
 //  ApiConstants.swift
-//  RestAPIAppCW
+//  RestAPICW
 //
 //  Created by Martynov Evgeny on 22.12.22.
 //
