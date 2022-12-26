@@ -10,6 +10,7 @@ import UIKit
 class ToDosTVC: UITableViewController {
     var user: User?
     var todos: [ToDo] = []
+    
     override func viewWillAppear(_ animated: Bool) {
         fetchAlbums()
     }

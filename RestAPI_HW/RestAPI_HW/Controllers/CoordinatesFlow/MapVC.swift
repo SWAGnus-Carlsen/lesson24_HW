@@ -1,14 +1,13 @@
 //
 //  MapVC.swift
-//  Vitali's L13_HW
+//  RestAPI_HW
 //
-//  Created by Vitaliy Halai on 13.11.22.
+//  Created by Vitaliy Halai on 25.12.22.
 //
-
 import UIKit
 import GoogleMaps
 
-typealias Coords = (CLLocationCoordinate2D) -> Void
+//typealias Coords = (CLLocationCoordinate2D) -> Void
 
 class MapVC: UIViewController {
     
@@ -17,16 +16,16 @@ class MapVC: UIViewController {
     
     var user: User?
     
-    var transferClosure: Coords!
+    //var transferClosure: Coords!
     var coordinates: CLLocationCoordinate2D?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        coordinates = CLLocationCoordinate2D(latitude: CLLocationDegrees((user?.address?.geo?.lat ?? "")) ?? 0, longitude: CLLocationDegrees((user?.address?.geo?.lng ?? "")) ?? 0)
         let camera = GMSCameraPosition.camera(withLatitude: coordinates?.latitude ?? 0 , longitude: coordinates?.longitude ?? 0, zoom: 2.0)
         let mapView = GMSMapView.map(withFrame: view.frame, camera: camera)
         
-        coordinates?.latitude = CLLocationDegrees(Double(user?.address?.geo?.lat ?? "") ?? 0)
-        coordinates?.longitude = CLLocationDegrees(Double(user?.address?.geo?.lng ?? "") ?? 0)
+       
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: coordinates?.latitude ?? 0, longitude: coordinates?.longitude ?? 0)
         marker.map = mapView

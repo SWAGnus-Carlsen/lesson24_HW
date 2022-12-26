@@ -1,8 +1,8 @@
 //
 //  UsersTVC.swift
-//  RestAPIAppCW
+//  RestAPI_HW
 //
-//  Created by Martynov Evgeny on 22.12.22.
+//  Created by Vitaliy Halai on 25.12.22.
 //
 
 import UIKit

@@ -15,7 +15,6 @@
 		12DB1A792958BF55006C3847 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A782958BF55006C3847 /* Post.swift */; };
 		12DB1A7B2958BF65006C3847 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A7A2958BF65006C3847 /* Comment.swift */; };
 		12DB1A7D2958BF73006C3847 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A7C2958BF73006C3847 /* Photo.swift */; };
-		12DB1A7F2958CA97006C3847 /* PhotosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A7E2958CA97006C3847 /* PhotosTVC.swift */; };
 		12DB1A822958D368006C3847 /* Coordinates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DB1A812958D368006C3847 /* Coordinates.storyboard */; };
 		12DB1A852958D53F006C3847 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A842958D53F006C3847 /* MapVC.swift */; };
 		12DB1A872958E4A7006C3847 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A862958E4A7006C3847 /* Album.swift */; };
@@ -47,7 +46,6 @@
 		12DB1A782958BF55006C3847 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		12DB1A7A2958BF65006C3847 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		12DB1A7C2958BF73006C3847 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		12DB1A7E2958CA97006C3847 /* PhotosTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosTVC.swift; sourceTree = "<group>"; };
 		12DB1A812958D368006C3847 /* Coordinates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Coordinates.storyboard; sourceTree = "<group>"; };
 		12DB1A842958D53F006C3847 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		12DB1A862958E4A7006C3847 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				12DB1A842958D53F006C3847 /* MapVC.swift */,
-				12DB1A7E2958CA97006C3847 /* PhotosTVC.swift */,
 			);
 			path = CoordinatesFlow;
 			sourceTree = "<group>";
@@ -311,7 +308,6 @@
 				2DCE14732954DA1900C143DE /* PostsTVC.swift in Sources */,
 				12DB1A792958BF55006C3847 /* Post.swift in Sources */,
 				12DB1A7D2958BF73006C3847 /* Photo.swift in Sources */,
-				12DB1A7F2958CA97006C3847 /* PhotosTVC.swift in Sources */,
 				2DCE146C2954D20600C143DE /* UsersTVC.swift in Sources */,
 				12DB1A7B2958BF65006C3847 /* Comment.swift in Sources */,
 				12DB1A8D2958E952006C3847 /* ToDo.swift in Sources */,
