@@ -37,7 +37,7 @@ class UsersTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = users[indexPath.row]
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "DetailUserVC") as! DetailUserVC
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "DetailUserVC") as? DetailUserVC else { return }
         vc.user = user
         navigationController?.pushViewController(vc, animated: true)
     }

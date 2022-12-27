@@ -16,7 +16,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2g3-ir-IIi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.78361636400000001" green="0.55879429199999997" blue="0.31781410700000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MU7-fK-4mv">
                             <size key="itemSize" width="336" height="179"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -34,7 +34,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNu-8d-t8H">
                                             <rect key="frame" x="136.33333333333334" y="74.666666666666671" width="63.666666666666657" height="30"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" systemColor="systemGray6Color"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -45,7 +45,7 @@
                                         <constraint firstItem="MNu-8d-t8H" firstAttribute="centerY" secondItem="awM-2x-E8Z" secondAttribute="centerY" id="vyT-78-pk7"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <size key="customSize" width="336" height="179"/>
                                 <connections>
                                     <outlet property="infoLbl" destination="MNu-8d-t8H" id="6rx-1p-7wN"/>
@@ -356,6 +356,12 @@
         <image name="defaultImage" width="880" height="697"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

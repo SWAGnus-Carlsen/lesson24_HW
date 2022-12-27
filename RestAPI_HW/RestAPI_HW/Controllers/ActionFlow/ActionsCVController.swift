@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum UserActons: String, CaseIterable /* позволяет из перечисления сделать массив */ {
+enum UserActons: String, CaseIterable  {
     case downloadImage = "Download Image"
     case users = "Users"
 }
@@ -15,25 +15,25 @@ enum UserActons: String, CaseIterable /* позволяет из перечис�
 class ActionsCVController: UICollectionViewController {
     
     private let reuseIdentifier = "Cell"
-    private let userActons = UserActons.allCases
+    private let userActions = UserActons.allCases
 
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        userActons.count
+        userActions.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? ActionCVCell else { return UICollectionViewCell() }
-        cell.infoLbl.text = userActons[indexPath.row].rawValue
+        cell.infoLbl.text = userActions[indexPath.row].rawValue
         return cell
     }
 
     // MARK: UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let userActon = userActons[indexPath.row]
-        switch userActon {
+        let userAction = userActions[indexPath.row]
+        switch userAction {
             case .downloadImage: performSegue(withIdentifier: "DownloadImageSegue", sender: nil)
             case .users: performSegue(withIdentifier: "UsersSegue", sender: nil)
         }
