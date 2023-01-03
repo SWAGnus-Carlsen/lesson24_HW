@@ -60,13 +60,13 @@ class PostsTVC: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let vc = segue.destination as? CommentsTVC,
-//           let indexPath = sender as? IndexPath {
-//            let post = posts[indexPath.row]
-//            vc.postId = post.id
-//        } else if let vc = segue.destination as? NewPostVC {
-//            vc.user = user
-//        }
+        /* if let vc = segue.destination as? CommentsTVC,
+           let indexPath = sender as? IndexPath {
+            let post = posts[indexPath.row]
+            vc.postId = post.id
+        } else */ if let vc = segue.destination as? NewPostVC {
+            vc.user = user
+        }
     }
     
     func fetchPosts() {
