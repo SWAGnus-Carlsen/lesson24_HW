@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1298F052296472030082EAD6 /* NewPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298F051296472020082EAD6 /* NewPostVC.swift */; };
+		1298F054296472BA0082EAD6 /* CommentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1298F053296472BA0082EAD6 /* CommentsTVC.swift */; };
 		12DB1A6C2958BC51006C3847 /* AlbumsFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DB1A6B2958BC51006C3847 /* AlbumsFlow.storyboard */; };
 		12DB1A712958BED1006C3847 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A702958BED1006C3847 /* User.swift */; };
 		12DB1A732958BEF5006C3847 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A722958BEF5006C3847 /* Address.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1298F051296472020082EAD6 /* NewPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostVC.swift; sourceTree = "<group>"; };
+		1298F053296472BA0082EAD6 /* CommentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTVC.swift; sourceTree = "<group>"; };
 		12DB1A6B2958BC51006C3847 /* AlbumsFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumsFlow.storyboard; sourceTree = "<group>"; };
 		12DB1A702958BED1006C3847 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12DB1A722958BEF5006C3847 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -210,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				2DCE14722954DA1900C143DE /* PostsTVC.swift */,
+				1298F051296472020082EAD6 /* NewPostVC.swift */,
+				1298F053296472BA0082EAD6 /* CommentsTVC.swift */,
 			);
 			path = PostsFlow;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				12DB1A732958BEF5006C3847 /* Address.swift in Sources */,
 				2D4326472952201F00165E37 /* AppDelegate.swift in Sources */,
 				12DB1A852958D53F006C3847 /* MapVC.swift in Sources */,
+				1298F052296472030082EAD6 /* NewPostVC.swift in Sources */,
 				2DCE14732954DA1900C143DE /* PostsTVC.swift in Sources */,
 				12DB1A792958BF55006C3847 /* Post.swift in Sources */,
 				12DB1A7D2958BF73006C3847 /* Photo.swift in Sources */,
@@ -316,6 +323,7 @@
 				12DB1A752958BF13006C3847 /* Company.swift in Sources */,
 				12DB1A712958BED1006C3847 /* User.swift in Sources */,
 				12DB1A772958BF34006C3847 /* Geo.swift in Sources */,
+				1298F054296472BA0082EAD6 /* CommentsTVC.swift in Sources */,
 				12DB1A922958EAD1006C3847 /* ToDosTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +479,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,6 +508,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
