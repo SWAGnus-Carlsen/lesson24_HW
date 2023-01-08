@@ -67,6 +67,12 @@ class PostsTVC: UITableViewController {
         } else */ if let vc = segue.destination as? NewPostVC {
             vc.user = user
         }
+        #warning("здесь еще рано что-то менять")
+        if let vc = segue.destination as? CommentsTVC,
+           let indexPath = sender as? IndexPath {
+            let post = posts[indexPath.row]
+            vc.postID = post.id
+        }
     }
     
     func fetchPosts() {
