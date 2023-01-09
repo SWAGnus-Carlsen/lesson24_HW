@@ -6,104 +6,64 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 class AlbumsTVC: UITableViewController {
-    var user: User?
-    var albums: [Album] = []
-    override func viewWillAppear(_ animated: Bool) {
-        fetchAlbums()
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    var user: User!
+    var albums: [JSON] = []
+
+    override func viewDidLoad() {
+        getData()
+    }
+
+    private func getData() {
+
+        guard let userId = user?.id else { return }
+        
+        guard let url = URL(string: "\(ApiConstants.albumsPath)?userId=\(userId)") else { return }
+
+        AF.request(url).response { response in
+            
+            switch response.result {
+            case .success(let data):
+                guard let data = data else { return }
+                self.albums = JSON(data).arrayValue
+                self.tableView.reloadData()
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        albums.count
+        return albums.count
     }
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Cell")
+        cell.textLabel?.text = (albums[indexPath.row]["id"].int ?? 0).description
+        cell.detailTextLabel?.text = albums[indexPath.row]["title"].stringValue
+        cell.detailTextLabel?.numberOfLines = 0
+        return cell
+    }
+
+    // MARK: - Table view delegate
     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let album = albums[indexPath.row]
-         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-         cell.textLabel?.text = album.title
-         cell.detailTextLabel?.text = "!!ID: \(album.id ?? -0)  !!"
-
-         return cell
-     }
-     
-
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-         // Return false if you do not want the specified item to be editable.
-         return true
-     }
-     */
-
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-         if editingStyle == .delete {
-             // Delete the row from the data source
-             tableView.deleteRows(at: [indexPath], with: .fade)
-         } else if editingStyle == .insert {
-             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-         }
-     }
-     */
-
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-     }
-     */
-
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-         // Return false if you do not want the item to be re-orderable.
-         return true
-     }
-     */
-
-    /*
-     // MARK: - Navigation
-
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-     }
-     */
-    private func fetchAlbums() {
-        guard let userId = user?.id else { return }
-        let pathUrl = "\(ApiConstants.albumsPath)?userId=\(userId)"
-
-        guard let url = URL(string: pathUrl) else { return }
-
-        let task = URLSession.shared.dataTask(with: url) { data, _, _ in
-            guard let data = data else { return }
-            do {
-                self.albums = try JSONDecoder().decode([Album].self, from: data)
-                print(self.albums)
-            } catch {
-                print(error)
-            }
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        task.resume()
-    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let albom = alboms[indexPath.row]
+//        performSegue(withIdentifier: "showPhotos", sender: albom)
+//    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showPhotos",
+//            let photosCollectionVC = segue.destination as? PhotosCVC,
+//            let album = sender as? JSON {
+//            photosCollectionVC.user = user
+//            photosCollectionVC.album = album
+//        }
+//    }
 }

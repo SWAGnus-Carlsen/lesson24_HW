@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Q0m-e6-sgO" kind="show" id="h5w-Mb-sXt"/>
+                                    <segue destination="Q0m-e6-sgO" kind="show" identifier="commentsSegue" id="hil-03-mQ7"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -65,7 +65,7 @@
         <!--New post-->
         <scene sceneID="UwW-Oq-ybo">
             <objects>
-                <viewController id="BgR-DB-dc6" customClass="NewPostVC" customModule="RestAPIAppCW" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BgR-DB-dc6" customClass="NewPostVC" customModule="RestAPI_HW" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JSg-yQ-PmJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
         <!--Comments-->
         <scene sceneID="bIf-wb-PGX">
             <objects>
-                <tableViewController id="Q0m-e6-sgO" customClass="CommentsTVC" customModule="RestAPIAppCW" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Q0m-e6-sgO" customClass="CommentsTVC" customModule="RestAPI_HW" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="FRD-xw-izm">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

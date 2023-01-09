@@ -11,11 +11,11 @@ class CommentsTVC: UITableViewController {
     
     var postID: Int?
     var comments: [Comment] = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewWillAppear(_ animated: Bool) {
         fetchComments()
     }
+
 
     // MARK: - Table view data source
 

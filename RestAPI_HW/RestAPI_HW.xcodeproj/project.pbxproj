@@ -12,6 +12,7 @@
 		12D12F05296B58F2006FFEA3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 12D12F04296B58F2006FFEA3 /* SwiftyJSON */; };
 		12D12F08296B5C4C006FFEA3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 12D12F07296B5C4C006FFEA3 /* Alamofire */; };
 		12D12F0B296B5CBE006FFEA3 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 12D12F0A296B5CBE006FFEA3 /* AlamofireImage */; };
+		12D12F0E296C72BD006FFEA3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D12F0D296C72BD006FFEA3 /* NetworkService.swift */; };
 		12DB1A6C2958BC51006C3847 /* AlbumsFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DB1A6B2958BC51006C3847 /* AlbumsFlow.storyboard */; };
 		12DB1A712958BED1006C3847 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A702958BED1006C3847 /* User.swift */; };
 		12DB1A732958BEF5006C3847 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DB1A722958BEF5006C3847 /* Address.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		1298F051296472020082EAD6 /* NewPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostVC.swift; sourceTree = "<group>"; };
 		1298F053296472BA0082EAD6 /* CommentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTVC.swift; sourceTree = "<group>"; };
+		12D12F0D296C72BD006FFEA3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		12DB1A6B2958BC51006C3847 /* AlbumsFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumsFlow.storyboard; sourceTree = "<group>"; };
 		12DB1A702958BED1006C3847 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		12DB1A722958BEF5006C3847 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12D12F0C296C7291006FFEA3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				12D12F0D296C72BD006FFEA3 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		12DB1A832958D4C9006C3847 /* CoordinatesFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +185,7 @@
 		2D4326452952201F00165E37 /* RestAPI_HW */ = {
 			isa = PBXGroup;
 			children = (
+				12D12F0C296C7291006FFEA3 /* Services */,
 				2D0B77FB2952214A0006C1EA /* Models */,
 				2D43265B295220CE00165E37 /* Views */,
 				2D0B77FC295221520006C1EA /* Controllers */,
@@ -328,6 +339,7 @@
 				2D4326472952201F00165E37 /* AppDelegate.swift in Sources */,
 				12DB1A852958D53F006C3847 /* MapVC.swift in Sources */,
 				1298F052296472030082EAD6 /* NewPostVC.swift in Sources */,
+				12D12F0E296C72BD006FFEA3 /* NetworkService.swift in Sources */,
 				2DCE14732954DA1900C143DE /* PostsTVC.swift in Sources */,
 				12DB1A792958BF55006C3847 /* Post.swift in Sources */,
 				12DB1A7D2958BF73006C3847 /* Photo.swift in Sources */,
