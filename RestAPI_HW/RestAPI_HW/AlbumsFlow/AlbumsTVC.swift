@@ -53,17 +53,17 @@ class AlbumsTVC: UITableViewController {
 
     // MARK: - Table view delegate
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let albom = alboms[indexPath.row]
-//        performSegue(withIdentifier: "showPhotos", sender: albom)
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let album = albums[indexPath.row]
+        performSegue(withIdentifier: "showPhotos", sender: album)
+    }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showPhotos",
-//            let photosCollectionVC = segue.destination as? PhotosCVC,
-//            let album = sender as? JSON {
-//            photosCollectionVC.user = user
-//            photosCollectionVC.album = album
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPhotos",
+            let photosCollectionVC = segue.destination as? PhotosCollectionViewController,
+            let album = sender as? JSON {
+            photosCollectionVC.user = user
+            photosCollectionVC.album = album
+        }
+    }
 }
