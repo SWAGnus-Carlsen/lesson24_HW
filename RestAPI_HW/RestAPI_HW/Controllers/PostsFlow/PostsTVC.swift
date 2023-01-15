@@ -2,7 +2,7 @@
 //  PostsTVC.swift
 //  RestAPIAppCW
 //
-//  Created by Martynov Evgeny on 22.12.22.
+//  Created by Vitaliy Halai on 25.12.22.
 //
 
 import UIKit
@@ -33,40 +33,40 @@ class PostsTVC: UITableViewController {
     }
 
     // Override to support conditional editing of the table view.
-//    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-//        return true
-//    }
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
 
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete, let id = posts[indexPath.row].id {
-//            NetworkService.deletePost(postID: id) { [weak self] json, error in
-//                if json != nil {
-//                    self?.posts.remove(at: indexPath.row)
-//                    tableView.deleteRows(at: [indexPath], with: .automatic)
-//                } else if let error = error {
-//                    print(error)
-//                }
-//            }
-//        }
+        if editingStyle == .delete, let id = posts[indexPath.row].id {
+            NetworkService.deletePost(postID: id) { [weak self] json, error in
+                if json != nil {
+                    self?.posts.remove(at: indexPath.row)
+                    tableView.deleteRows(at: [indexPath], with: .automatic)
+                } else if let error = error {
+                    print(error)
+                }
+            }
+        }
     }
     
     // MARK: - Table view delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        performSegue(withIdentifier: "commentsSegue", sender: indexPath)
+        performSegue(withIdentifier: "commentsSegue", sender: indexPath)
     }
     
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let vc = segue.destination as? CommentsTVC,
-//           let indexPath = sender as? IndexPath {
-//            let post = posts[indexPath.row]
-//            vc.postId = post.id
-//        } else if let vc = segue.destination as? NewPostVC {
-//            vc.user = user
-//        }
+         if let vc = segue.destination as? CommentsTVC,
+           let indexPath = sender as? IndexPath {
+            let post = posts[indexPath.row]
+            vc.postID = post.id
+        } else  if let vc = segue.destination as? NewPostVC {
+            vc.user = user
+        }
     }
     
     func fetchPosts() {
